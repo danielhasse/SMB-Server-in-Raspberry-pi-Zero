@@ -50,7 +50,7 @@ add the following lines in the end of the file:
 
 ```
 [share]
-Comment = Pi shared folder
+
 Path = /sharedfolder
 Browseable = yes
 Writeable = Yes
@@ -61,4 +61,33 @@ Public = yes
 Guest ok = yes
 ```
 
-## 
+## Set password for Samba
+
+It is a good idea to set a password for Samba
+
+```
+sudo smbpasswd -a pi
+```
+now restart the Samba service
+
+```
+sudo systemctl restart smb.service
+```
+## Find your Folder
+
+These steps are for Windows 10 OS
+
+in Windows OS, go to your search bar and type your ip address from your pi in the network:
+```
+\\192.168.0.10\
+```
+you should see your shared folder.
+
+Right click and select map network drive
+
+enable to reconnect at signin and assign a letter to it.
+
+There you go, now you have your own personal file system over the network using a low budget raspberry pi.
+
+Thank you!
+
