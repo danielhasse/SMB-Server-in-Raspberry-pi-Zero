@@ -83,9 +83,9 @@ in Windows OS, go to your search bar and type your ip address from your pi in th
 ```
 you should see your shared folder.
 
-Right click and select map network drive
+Right click and select ##map network drive
 
-enable to reconnect at signin and assign a letter to it.
+enable to ##reconnect at signin and ##assign a letter to it.
 
 There you go, now you have your own personal file system over the network using a low budget raspberry pi.
 
